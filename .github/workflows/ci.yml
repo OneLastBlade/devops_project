@@ -27,7 +27,7 @@ jobs:
       - name: SAST - Semgrep
         uses: returntocorp/semgrep-action@v1
         with:
-          config: "p/default"
+        config: ".semgrep.yml"
 
       - name: Build Docker image
         run: docker build -t devops-project-yessine .
