@@ -30,4 +30,4 @@ jobs:
           config: "p/default"
 
       - name: Build Docker image
-        run: docker build -t devops-mini-api .
+        run: docker build -t devops-project-yessine .
