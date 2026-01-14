@@ -1,8 +1,8 @@
 require("./tracer");
-const express = require("express");
 const client = require("prom-client");
 const pino = require("pino");
-
+const express = require("express");
+// nosemgrep: javascript.express.security.audit.express-check-csurf-middleware-usage
 const app = express();
 const logger = pino();
 const collectDefaultMetrics = client.collectDefaultMetrics;

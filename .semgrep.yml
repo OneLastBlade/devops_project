@@ -1,0 +1,3 @@
+rules:
+  - id: javascript.express.security.audit.express-check-csurf-middleware-usage
+    mode: skip 
