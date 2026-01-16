@@ -4,13 +4,17 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "node test/app.test.js"
+    "test": "jest --testEnvironment=node"
   },
   "dependencies": {
-    "express": "^4.19.0",
-    "prom-client": "^15.1.0",
-    "pino": "^9.0.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.46.0",
     "@opentelemetry/sdk-node": "^0.46.0",
-    "@opentelemetry/auto-instrumentations-node": "^0.46.0"
+    "express": "^4.19.0",
+    "pino": "^9.0.0",
+    "prom-client": "^15.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
   }
 }
